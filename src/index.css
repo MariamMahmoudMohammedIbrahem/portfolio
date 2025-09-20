@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.delay01 { -webkit-animation-delay: .4s; animation-delay: .4s;}
+
+.logo, header a{
+	font-family: 'Geist';
+	color: #111111;
+	font-weight: 500;
+	font-size: 1.375rem;
+}
+.slide {
+	-webkit-animation:slide .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-moz-animation:slide .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	animation:slide .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;
+}
+
+@-webkit-keyframes slide {
+	0% {
+    opacity: 0;
+    -webkit-transform: translateY(10vh);
+  }
+	100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }	
+}
+
+@keyframes slide {
+	0% {
+    opacity: 0;
+    -webkit-transform: translateY(10vh);
+  }
+	100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }	
+}
