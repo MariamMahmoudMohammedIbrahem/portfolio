@@ -47,7 +47,12 @@ const projects = [
     ],
     links: [],
     video: null,
-    images: [],
+    images: [
+      "azaanmain.png",
+      "azaan1.png",
+      "azaan2.png",
+      "azaan3.png",
+    ],
   },
   {
     id: "megasmart",
@@ -89,7 +94,14 @@ const projects = [
     ],
     links: [],
     video: null,
-    images: [],
+    images: [
+      "transformermain.png",
+      "transformer1.png",
+      "transformer2.png",
+      "transformer3.png",
+      "transformer4.png",
+      "transformer5.png",
+    ],
   },
   {
     id: "smartHub",
