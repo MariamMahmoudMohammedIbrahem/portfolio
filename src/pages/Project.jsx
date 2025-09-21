@@ -1,7 +1,6 @@
 import { useParams, Link } from "react-router-dom"
 import projects from "../data/projects"
 
-
 export default function Project() {
   const { id } = useParams()
   const project = projects.find((p) => p.id === id)
@@ -24,7 +23,7 @@ export default function Project() {
         <Link to="/" className="logo text-xl font-bold hover:underline">
           Mariam Mahmoud
         </Link>
-        <Link to="/about" className="hover:underline">
+        <Link to="/about" className="hover:underline transition">
           About
         </Link>
       </header>
@@ -35,23 +34,27 @@ export default function Project() {
         <h3 className="text-lg text-gray-700">{project.description}</h3>
 
         {project.details.map((para, i) => (
-          <p key={i}>{para}</p>
+          <p key={i} className="text-gray-700 leading-relaxed">
+            {para}
+          </p>
         ))}
 
         {/* Links */}
-        <div className="space-x-4">
-          {project.links?.map((link, i) => (
-            <a
-              key={i}
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
-            >
-              {link.label}
-            </a>
-          ))}
-        </div>
+        {project.links?.length > 0 && (
+          <div className="space-x-4">
+            {project.links.map((link, i) => (
+              <a
+                key={i}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Media */}

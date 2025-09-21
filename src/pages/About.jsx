@@ -5,7 +5,7 @@ export default function About() {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("hey@dejan.works")
+    navigator.clipboard.writeText("mariam.mahmoud2811@gmail.com")
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }
@@ -14,8 +14,12 @@ export default function About() {
     <div className="flex flex-col items-center px-6">
       {/* Header */}
       <div className="w-full max-w-5xl flex justify-between items-center py-6">
-        <a href="/" class="logo">Mariam Mahmoud</a>
-        <a href="/">Work</a>
+        <Link to="/" className="logo text-xl font-bold">
+          Mariam Mahmoud
+        </Link>
+        <Link to="/" className="hover:underline transition">
+          Work
+        </Link>
       </div>
 
       {/* Intro */}
@@ -32,11 +36,11 @@ export default function About() {
           </p>
           <p className="text-gray-700">
             Since August 2023, I’ve been working full-time at EOIP (Engineering Office for Integrated
-             Project), where I’ve developed multiple end-to-end mobile solutions using Flutter and Dart.
-              My projects range from smart utility monitoring apps (integrating BLE, MQTT, and secure 
-              storage) to real-time lighting control systems and transformer monitoring dashboards. 
-              I have consistently tackled critical challenges such as optimizing communication with 
-              hardware, ensuring secure transactions, and implementing robust state management.
+            Project), where I’ve developed multiple end-to-end mobile solutions using Flutter and Dart.
+            My projects range from smart utility monitoring apps (integrating BLE, MQTT, and secure 
+            storage) to real-time lighting control systems and transformer monitoring dashboards. 
+            I have consistently tackled critical challenges such as optimizing communication with 
+            hardware, ensuring secure transactions, and implementing robust state management.
           </p>
           <p className="text-gray-700">
             Beyond professional work, I’ve also built personal projects that highlight my versatility, 
@@ -45,13 +49,11 @@ export default function About() {
           </p>
           <p className="text-gray-700">
             My technical toolkit includes Flutter, Dart, Firebase, REST APIs, SQL, MQTT, Java, Selenium, 
-            and modern testing frameworks, problem-solving, and collaboration. I thrive in dynamic 
-            environments where I can bridge the gap between user needs and technical execution, 
-            continuously delivering solutions that are both impactful and reliable.
+            and modern testing frameworks. I thrive in dynamic environments where I can bridge the gap 
+            between user needs and technical execution, continuously delivering solutions that are both 
+            impactful and reliable.
           </p>
         </div>
-
-        
       </div>
 
       {/* Work Experience */}
@@ -73,16 +75,13 @@ export default function About() {
 
         {/* Education */}
         <h4 className="text-xl font-semibold">Education</h4>
-        {/* <div className="space-y-4"> */}
-          <div>
-            <p className="font-medium">Bachelor of Engineering</p>
-            <p className="text-gray-600">
-              Systems and Biomedical Engineering — Faculty of Engineering, Cairo University
-            </p>
-            <p className="text-sm text-gray-500">2018 – 2023</p>
-          </div>
-          
-        {/* </div> */}
+        <div>
+          <p className="font-medium">Bachelor of Engineering</p>
+          <p className="text-gray-600">
+            Systems and Biomedical Engineering — Faculty of Engineering, Cairo University
+          </p>
+          <p className="text-sm text-gray-500">2018 – 2023</p>
+        </div>
 
         {/* Disciplines */}
         <h4 className="text-xl font-semibold">Disciplines</h4>
