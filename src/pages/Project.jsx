@@ -9,7 +9,7 @@ export default function Project() {
     return (
       <div className="text-center mt-20">
         <h2 className="text-2xl font-bold">Project not found</h2>
-        <Link to="/" className="text-blue-600 hover:underline mt-4 block">
+        <Link to="/" className="text-pink-400 hover:underline mt-4 block">
           Back to all projects
         </Link>
       </div>
@@ -48,7 +48,7 @@ export default function Project() {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="text-pink-400 hover:underline"
               >
                 {link.label}
               </a>
@@ -91,7 +91,7 @@ export default function Project() {
 
       {/* Back link */}
       <div className="back-to-projects mt-12 text-center">
-        <Link to="/" className="text-blue-600 hover:underline">
+        <Link to="/" className="text-pink-400 hover:underline">
           Back to all projects
         </Link>
       </div>

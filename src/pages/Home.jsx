@@ -85,7 +85,7 @@ export default function Home() {
         <p className="text-gray-600">Get in touch:</p>
         <a
           href="mailto:mariam.mahmoud2811@gmail.com"
-          className="text-blue-600 font-medium hover:underline"
+          className="text-pink-400 font-medium hover:underline"
         >
           mariam.mahmoud2811@gmail.com
         </a>

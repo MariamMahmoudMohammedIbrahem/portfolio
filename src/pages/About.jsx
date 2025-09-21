@@ -14,7 +14,7 @@ export default function About() {
     <div className="flex flex-col items-center px-6">
       {/* Header */}
       <div className="w-full max-w-5xl flex justify-between items-center py-6">
-        <Link to="/" className="logo text-xl font-bold">
+        <Link to="/" className="logo text-xl font-bold hover:underline">
           Mariam Mahmoud
         </Link>
         <Link to="/" className="hover:underline transition">
@@ -23,38 +23,37 @@ export default function About() {
       </div>
 
       {/* Intro */}
-      <div className="grid md:grid-cols-1 gap-10 items-start mb-16">
-        <div className="about text-left space-y-4">
-          <h2 className="text-2xl font-semibold">
-            Software Engineer and Flutter Developer passionate about creating intuitive, reliable, and impactful mobile solutions.
-          </h2>
-          <p className="text-gray-700">
-            I’m a Flutter Developer with a Bachelor’s degree in Systems and Biomedical Engineering 
-            from Cairo University (July 2023, GPA 3.5). With hands-on experience in building and 
-            deploying mobile applications, I specialize in creating user-friendly, high-performance 
-            apps that integrate seamlessly with hardware, cloud services, and real-time data systems.
-          </p>
-          <p className="text-gray-700">
-            Since August 2023, I’ve been working full-time at EOIP (Engineering Office for Integrated
-            Project), where I’ve developed multiple end-to-end mobile solutions using Flutter and Dart.
-            My projects range from smart utility monitoring apps (integrating BLE, MQTT, and secure 
-            storage) to real-time lighting control systems and transformer monitoring dashboards. 
-            I have consistently tackled critical challenges such as optimizing communication with 
-            hardware, ensuring secure transactions, and implementing robust state management.
-          </p>
-          <p className="text-gray-700">
-            Beyond professional work, I’ve also built personal projects that highlight my versatility, 
-            including a calorie-tracking food ordering app, and hands-on experience in software testing 
-            (manual and automated with Selenium, Java, and Cucumber).
-          </p>
-          <p className="text-gray-700">
-            My technical toolkit includes Flutter, Dart, Firebase, REST APIs, SQL, MQTT, Java, Selenium, 
-            and modern testing frameworks. I thrive in dynamic environments where I can bridge the gap 
-            between user needs and technical execution, continuously delivering solutions that are both 
-            impactful and reliable.
-          </p>
-        </div>
-      </div>
+<div className="about space-y-6 text-center max-w-3xl mx-auto mb-16">
+  <h2 className="text-2xl font-semibold">
+    Software Engineer and Flutter Developer passionate about creating intuitive, reliable, and impactful mobile solutions.
+  </h2>
+  <p className="text-gray-700 leading-relaxed">
+    I’m a Flutter Developer with a Bachelor’s degree in Systems and Biomedical Engineering 
+    from Cairo University (July 2023, GPA 3.5). With hands-on experience in building and 
+    deploying mobile applications, I specialize in creating user-friendly, high-performance 
+    apps that integrate seamlessly with hardware, cloud services, and real-time data systems.
+  </p>
+  <p className="text-gray-700 leading-relaxed">
+    Since August 2023, I’ve been working full-time at EOIP (Engineering Office for Integrated
+    Project), where I’ve developed multiple end-to-end mobile solutions using Flutter and Dart.
+    My projects range from smart utility monitoring apps (integrating BLE, MQTT, and secure 
+    storage) to real-time lighting control systems and transformer monitoring dashboards. 
+    I have consistently tackled critical challenges such as optimizing communication with 
+    hardware, ensuring secure transactions, and implementing robust state management.
+  </p>
+  <p className="text-gray-700 leading-relaxed">
+    Beyond professional work, I’ve also built personal projects that highlight my versatility, 
+    including a calorie-tracking food ordering app, and hands-on experience in software testing 
+    (manual and automated with Selenium, Java, and Cucumber).
+  </p>
+  <p className="text-gray-700 leading-relaxed">
+    My technical toolkit includes Flutter, Dart, Firebase, REST APIs, SQL, MQTT, Java, Selenium, 
+    and modern testing frameworks. I thrive in dynamic environments where I can bridge the gap 
+    between user needs and technical execution, continuously delivering solutions that are both 
+    impactful and reliable.
+  </p>
+</div>
+
 
       {/* Work Experience */}
       <div className="about space-y-8">
@@ -104,7 +103,7 @@ export default function About() {
         <div className="flex gap-6 mt-4">
           <button
             onClick={handleCopy}
-            className="text-blue-600 hover:underline"
+            className="text-pink-400 hover:underline"
           >
             {copied ? "Email Copied" : "mariam.mahmoud2811@gmail.com"}
           </button>
@@ -112,7 +111,7 @@ export default function About() {
             href="https://www.linkedin.com/in/mariam-mahmoud-50721b1b6/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="text-pink-400 hover:underline"
           >
             Linkedin
           </a>
