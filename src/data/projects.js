@@ -68,12 +68,12 @@ const projects = [
     ],
     video: null,
     images: [
-      import.meta.env.BASE_URL + "megamain.PNG",
-      import.meta.env.BASE_URL + "mega1.png",
-      import.meta.env.BASE_URL + "mega2.png",
-      import.meta.env.BASE_URL + "mega3.png",
-      import.meta.env.BASE_URL + "mega4.png",
-      import.meta.env.BASE_URL + "mega5.png",
+      import.meta.env.BASE_URL + "/img/megamain.PNG",
+      import.meta.env.BASE_URL + "/img/mega1.png",
+      import.meta.env.BASE_URL + "/img/mega2.png",
+      import.meta.env.BASE_URL + "/img/mega3.png",
+      import.meta.env.BASE_URL + "/img/mega4.png",
+      import.meta.env.BASE_URL + "/img/mega5.png",
     ],
   },
   {
