@@ -79,13 +79,14 @@ export default function Project() {
         )}
 
         {project.images?.map((img) => (
-          <img
-            key={img}
-            src={`/img/${img}`}
-            alt={img}
-            className="work-page-image rounded-lg shadow"
-          />
-        ))}
+  <img
+    key={img}
+    src={`${import.meta.env.BASE_URL}img/${img}`}
+    alt={img}
+    className="work-page-image rounded-lg shadow"
+  />
+))}
+
       </div>
 
       {/* Back link */}
